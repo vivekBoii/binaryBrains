@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup_lawyer_style.css">
+    <!-- font-family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font-awesome  -->
+    <script src="https://kit.fontawesome.com/fd1abba815.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <h1>Hey , </h1>
+            <p>Help us to create your profile by telling us a bit about yourself</p>
+            <div class="spacer"></div>
+            <img src="Images/logo.png" alt="Working Proffesional">
+        </div>
+        <div class="right-container">
+            <div class="form-container form-active">
+                <h3 class="step">Step 1</h3>
+                <h1 class="main-heading">Personal Information</h1>
+                <form action="" class="form"  autocomplete="off">
+                        <label for="username">Full Name</label>
+                        <input type="text" name="username" placeholder="Ex- Pankaj Kumar" id="username" required/>
+                    
+                        <label for="Age">Age</label>
+                        <input type="number" name="Age" placeholder="Ex- 35" id="Age" required/>
+                    
+                        <label for="Gender">Gender</label>
+                        <select name="Gender" id="gender">
+                            <option value="llb">Male</option>
+                            <option value="llm">Female</option>
+                            <option value="jd">others</option>
+                        </select>
+
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" placeholder="xxx@gmail.com" id="Email" required/>
+                    
+                        <label for="Phone">Phone</label>
+                        <input type="tel" name="Phone" placeholder="xxx xxx xxxxx" id="Phone" required/>
+                    
+                        <label for="Set-Password">Set Password</label>
+                        <input type="password" name="set-password" id="set-password" placeholder="ex- P@nk1j" required/>
+                    
+                        <label for="fav-sports">Address</label>
+                        <input type="password" name="confirm-Password" placeholder="Ex- Sadar Nagar, Gajraula, Uttar-Pradesh" id="confirm-Password" required/>
+                    
+                        <label for="city">Pincode</label>
+                        <input type="text" name="city" id="city"placeholder="######" required/>
+                    <div class="">
+                        <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+                    </div>
+                </form>
+            </div>
+            <div class="form-container">
+                <h3 class="step">Step 2</h3>
+                <h1 class="main-heading">Educational Information</h1>
+                <form action="" class="form" autocomplete="off">
+                
+                        <label for="College-name">Law College name</label>
+                        <input type="text" name="College-name" placeholder="Ex- ABC College" id="College-name" required/>
+                
+                        <label for="law-degree">Law degree</label>
+                        <select name="law-degree" id="law-degree">
+                            <option value="llb">LL.B.</option>
+                            <option value="llm">LL.M.</option>
+                            <option value="jd">J.D.</option>
+                            <option value="jsd">J.S.D</option>
+                            <option value="bcl">B.C.L</option>
+                            <option value="m-jur">M.Jur</option>
+                            <option value="d-jur">D.Jur</option>
+                        </select>
+                    
+                        <label for="year">Year of Completion</label>
+                        <input type="number" name="year" id="year" required/>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <a href="#" class="btn btn-next">Next</a>
+                    </div>
+                </form>
+            </div>
+            <div class="form-container">
+                <h3 class="step">Step 3</h3>
+                <h1 class="main-heading">Professional Information</h1>
+                <form action="" class="form" autocomplete="off">
+                    
+                        <label for="practice-area">Practise-Area</label>
+                        <input type="text" name="practice-area" id="practice-area" required/>
+                    
+                        <label for="experience">Years of Experience</label>
+                        <input type="number" min="0" name="experience" id="experience" required/>
+                    
+                        <label for="cases">No of Previous Cases</label>
+                        <input type="number" min="0" name="cases" id="cases" required/>
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <a href="#" class="btn btn-next">Next</a>
+                    </div>
+                </form>
+            </div>
+            <div class="form-container" autocomplete="off">
+                <h3 class="step">Step 4</h3>
+                <h1 class="main-heading">Upload documents</h1>
+                <form action="" class="form">
+                    
+                        <label for="aadhar" class="file-label">Aadhar Card <i class="fa-solid fa-upload"></i></label>
+                        <input type="file" name="aadhar" id="aadhar" accept="application/pdf" class="file" required>
+                    
+                        <label for="law-degree-pdf" class="file-label">Law Degree <i class="fa-solid fa-upload"></i></label>
+                        <input type="file" name="law-degree-pdf" id="law-degree-pdf" accept="application/pdf" class="file" required>
+
+                        <label for="Top-5-Case" class="file-label">Copy of Top 5-Cases<i class="fa-solid fa-upload"></i></label>
+                        <input type="file" name="aadhar" id="aadhar" accept="application/pdf" class="file" required>
+                    
+                        <label for="Top-5-Case" class="file-label">NewsLetter Published(if any)<i class="fa-solid fa-upload"></i></label>
+                        <input type="file" name="aadhar" id="aadhar" accept="application/pdf" class="file" >
+
+                        <label for="Top-5-Case" class="file-label">Certifications(if any)<i class="fa-solid fa-upload"></i></label>
+                        <input type="file" name="aadhar" id="aadhar" accept="application/pdf" class="file" >
+
+                        <label for="Top-5-Case" class="file-label">Testimonials(if any)<i class="fa-solid fa-upload"></i></label>
+                        <input type="file" name="aadhar" id="aadhar" accept="application/pdf" class="file" >
+
+                        <label for="Top-5-Case" class="file-label">Client Reviews(if any)<i class="fa-solid fa-upload"></i></label>
+                        <input type="file" name="aadhar" id="aadhar" accept="application/pdf" class="file" >
+
+                        <label for="Top-5-Case" class="file-label">Upload Your Image<i class="fa-solid fa-upload"></i></label>
+                        <input type="file" name="aadhar" id="aadhar" accept="application/pdf" class="file" >
+
+                    <div class="btns-group">
+                        <a href="#" class="btn btn-prev">Previous</a>
+                        <a href="#" class="btn btn-next">Sumbit+</a>
+                    </div>
+                </form>
+            </div>
+            </div>
+            <div class="stripe"></div>
+        </div>
+    </div>
+    <script src="signup_lawyer_script.js"></script>
+</body>
+</html>

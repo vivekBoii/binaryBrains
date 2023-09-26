@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #6f614a;
+    --secondary-color: #AA9482;
+}
+
+body{
+    background: linear-gradient(90deg, #E6E6E6 0%, #A18974 100%);
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.authenticator{
+    text-align: center;
+}
+
+.logo{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+.authenticator h2{
+    font-size: 26px;
+    color: var(--primary-color);
+}
+
+.authenticator p{
+    margin-bottom: 40px;
+}
+.login-container{
+    width: 480px;
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+}
+.login-container .header{
+    width: 480px;
+    display: flex;
+}
+
+.login-container .header button{
+    display: block;
+    width: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    border: none;
+
+}
+
+.login-container .header button:hover{
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+}
+
+.login-container .form-page{
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding-left: 50px;
+    
+}
+input::placeholder{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-group {
+    margin-bottom: 1.5rem 0;
+}
+i{
+    position: relative;
+    top: -36px;
+    left: -180px;
+}
+
+.forgot-remember{
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot-remember .check{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.forgot-remember .check label{
+    white-space: nowrap;
+    margin-left:5px;
+}
+
+.forgot-remember a{
+    font-size: 14px;
+    color: black;
+}
+
+.forgot-remember a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 18px;
+    padding: .9rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 2rem;
+    border: none;
+    position: relative;
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+

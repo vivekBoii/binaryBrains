@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #6f614a;
+    --secondary-color: #AA9482;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: linear-gradient(90deg, #E6E6E6 0%, #A18974 100%);
+}
+
+a{
+    text-decoration: none;
+}
+
+.landing-container{
+    padding: 60px;
+}
+
+.landing-content p{
+    color: var(--primary-color);
+}
+
+.landing-container::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.landing-container-header a{
+    font-size: 2em;
+    color: black;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+    height: 105px;
+}
+
+/* content section  */
+
+.landing-content h1{
+    font-size: 2.6rem;
+    max-width: 450px;
+    margin: 0;
+}
+
+/* list  */
+
+.landing-content-option ul{
+    list-style: none;
+    margin: 64px 0px;
+    padding: 0;
+}
+
+.landing-content-option ul li{
+    display: block;
+    max-width: 466px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid #FBFBFB;
+    padding: 24px 0px 24px 0px;
+    transition: .25s;
+    position: relative;
+}
+.landing-content-option ul li:hover{
+    border: 1px solid black;
+}
+
+.landing-content-option ul li a{
+    font-size: 16px;
+    color: black;
+    position: relative;
+    padding: 36px 36px 0px 36px;
+}
+
+.landing-content-option ul li i{
+    color: black;
+    left: 2px;
+    font-size: 25px;
+    padding-right: 40px ;
+}
+
+.btn {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 2rem;
+    border: none;
+    margin-top: 4rem;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--secondary-color);
+}
+
+button a{
+    font-weight: 700;
+    color: black;
+}
+
+@media only screen and (max-width: 845px) {
+    .landing-container::before{
+        display: none;
+    }
+  }
